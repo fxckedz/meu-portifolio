@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Matheus Medeiros | Portfolio</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:linear-gradient(135deg,#0f172a,#1e293b,#020617);
+color:white;
+min-height:100vh;
+min-width:320px;
+}
+
+/* LAYOUT */
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:40px 20px;
+}
+
+header{
+text-align:center;
+padding:120px 20px 80px;
+}
+
+header h1{
+font-size:48px;
+margin-bottom:10px;
+}
+
+header p{
+font-size:20px;
+color:#94a3b8;
+}
+
+/* BUTTONS */
+
+.buttons{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:10px;
+margin-top:25px;
+}
+
+.btn{
+padding:12px 25px;
+background:#3b82f6;
+color:white;
+text-decoration:none;
+border-radius:6px;
+transition:all 0.3s ease;
+}
+
+.btn:hover{
+background:#2563eb;
+transform:translateY(-2px);
+box-shadow:0 8px 20px rgba(0,0,0,0.3);
+}
+
+.btn.secondary{
+background:#1e293b;
+}
+
+.btn.secondary:hover{
+background:#334155;
+}
+
+/* SECTIONS */
+
+section{
+margin-top:80px;
+}
+
+h2{
+font-size:32px;
+margin-bottom:25px;
+}
+
+.about{
+color:#cbd5f5;
+width:100%;
+font-size:25px;
+line-height:1.7;
+}
+
+/* SKILLS */
+
+.skills{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+}
+
+.skill{
+flex:0 0 23%;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+background:#1e293b;
+padding:30px 20px;
+border-radius:12px;
+min-height:150px;
+transition:all 0.25s ease;
+}
+
+.skill:hover{
+transform:translateY(-6px);
+background:#334155;
+}
+
+.skill i{
+font-size:clamp(50px,5vw,70px);
+margin-bottom:10px;
+}
+
+.skill span{
+font-size:16px;
+color:#cbd5f5;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+margin-top:80px;
+padding:20px;
+color:#64748b;
+}
+
+/* RESPONSIVE */
+
+/* TABLET */
+
+@media (max-width:900px){
+
+.skill{
+flex:0 0 31%;
+}
+
+}
+
+/* CELULAR */
+
+@media (max-width:700px){
+
+.skill{
+flex:0 0 48%;
+}
+
+header h1{
+font-size:44px;
+}
+
+header p{
+font-size:22px;
+}
+
+.about{
+font-size:26px;
+}
+
+.skill span{
+font-size:18px;
+}
+
+.skill i{
+font-size:60px;
+}
+
+}
+
+/* CELULAR PEQUENO */
+
+@media (max-width:420px){
+
+.skill{
+flex:0 0 100%;
+}
+
+header h1{
+font-size:46px;
+}
+
+header p{
+font-size:24px;
+}
+
+.about{
+font-size:28px;
+}
+
+.skill span{
+font-size:20px;
+}
+
+.skill i{
+font-size:65px;
+}
+
+}
+
+/* QUANDO ALTURA > LARGURA (portrait) */
+
+@media (orientation: portrait){
+
+.skills{
+gap:15px;
+}
+
+.skill{
+flex:0 0 31%;
+padding:25px 15px;
+}
+
+header{
+padding:90px 20px 60px;
+}
+
+header h1{
+font-size:44px;
+}
+
+header p{
+font-size:24px;
+}
+
+.about{
+font-size:26px;
+}
+
+.skill span{
+font-size:18px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header class="container">
+
+<h1>Matheus Medeiros</h1>
+
+<p>Backend Developer | Java | Cybersecurity Enthusiast</p>
+
+<div class="buttons">
+
+<a href="https://github.com/fxckedz"
+target="_blank"
+class="btn secondary">
+My Projects
+</a>
+
+</div>
+
+</header>
+
+<section class="container">
+
+<h2>About Me</h2>
+
+<p class="about">
+I am a backend developer focused on building scalable APIs and learning cybersecurity.
+My main stack is Java with Spring Boot, and I enjoy understanding how systems work internally,
+from application architecture to security vulnerabilities and protections.
+</p>
+
+</section>
+
+<section class="container" id="skills">
+
+<h2>My Skills</h2>
+
+<div class="skills">
+
+<div class="skill">
+<i class="devicon-java-plain"></i>
+<span>Java</span>
+</div>
+
+<div class="skill">
+<i class="devicon-spring-plain"></i>
+<span>Spring</span>
+</div>
+
+<div class="skill">
+<i class="devicon-postgresql-plain"></i>
+<span>PostgreSQL</span>
+</div>
+
+<div class="skill">
+<i class="devicon-mysql-original"></i>
+<span>MySQL</span>
+</div>
+
+<div class="skill">
+<i class="devicon-docker-plain"></i>
+<span>Docker</span>
+</div>
+
+<div class="skill">
+<i class="devicon-git-plain"></i>
+<span>Git</span>
+</div>
+
+<div class="skill">
+<i class="devicon-linux-plain"></i>
+<span>Linux</span>
+</div>
+
+<div class="skill">
+<i class="devicon-typescript-plain"></i>
+<span>TypeScript</span>
+</div>
+
+<div class="skill">
+<i class="devicon-nodejs-plain"></i>
+<span>Node.js</span>
+</div>
+
+<div class="skill">
+<i class="devicon-amazonwebservices-plain-wordmark"></i>
+<span>AWS</span>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Matheus Medeiros
+
+</footer>
+
+</body>
+</html>
